@@ -82,7 +82,7 @@ int main(void)
 
             case 2: 
                 //Display all students
-                displayStudent(studentArray, size);
+                //displayStudent(studentArray, size);
 
             case 3:
 
