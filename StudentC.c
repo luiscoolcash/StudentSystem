@@ -157,8 +157,6 @@ void displayStudents(Student *students, int size)
         printf("\n");
     }
 
-// TEST
-// test commit
-// test commit 2
+
 
 }
