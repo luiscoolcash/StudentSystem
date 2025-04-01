@@ -41,6 +41,8 @@ void displayStudents(Student *students, int size);
 
 Student *searchStudent(Student *students, int size);
 
+void freeStudents(Student *students);
+
 
 int main(void)
 {
@@ -105,6 +107,8 @@ int main(void)
         }
 
     } while (choice != 4);
+
+    freeStudents(studentArray);
 
 }
 
@@ -173,6 +177,7 @@ void displayStudents(Student *students, int size)
 }
 
 Student *searchStudent(Student *students, int size)
+
 {
     int vinSearch;
     int status;
@@ -205,4 +210,10 @@ Student *searchStudent(Student *students, int size)
     return NULL;
 
 
+}
+
+void freeStudents(Student *students)
+{
+    free(students);
+    printf("Memory freed!\n");
 }
