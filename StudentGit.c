@@ -28,6 +28,8 @@ typedef struct //defining a struct called student
     char name[MAX]; 
     int id;
     float gpa;
+
+    
 }Student; 
 
 // function to initialize the student array (Creating a student)
